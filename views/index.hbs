@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
-    <link rel="stylesheet" href="public/stlying/style.css">
+    <link rel="stylesheet" href="../public/styling/style.css">
 </head>
 
 <body>
     <form class="ui">
         <h3>Movie Search:</h3>
-        <input id="termBox" type="text">
+        <input id="termBox" type="text" placeholder="Film">
         <input id="submit" type="submit" value="Submit">
     </form>
     <section class="container">
-        <!-- empty to contain search results -->
+        <div>
+            <img src='https://image.tmdb.org/t/p/w300/{{poster_path}}' alt="Movie Poster">
+            <h1>{{original_title}}</h1>
+            <p>{{overview}}</p>
+        </div>
     </section>
-    <script src="public/js/script.js"></script>
+    <script src="../public/js/script.js"></script>
 </body>
 </html>

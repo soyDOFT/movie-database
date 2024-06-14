@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.ui {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+        width: 100px;
+        align-self: center;
+        margin-left: 10px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 500px);
+}
