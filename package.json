@@ -1,0 +1,16 @@
+{
+  "name": "movie-database",
+  "version": "1.0.0",
+  "description": "By referring to https://developer.themoviedb.org/docs, create an application that displays a list of movies similar to the one entered by the user. The application should allow the user to select a movie and then present a list of movies that share similarities with the selected movie.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0"
+  }
+}
