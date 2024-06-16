@@ -38,10 +38,8 @@ app.get('/api/movies', (req, res) => {
                 .then(list => list.json())
                 .then(movies => {
                     movies.results.unshift(hit);
-                    console.log(movies);
                     res.render('index', movies);
                 })
-            console.log(`done`);
         })
         .catch(err => console.error('error:', err))
 })

@@ -7,7 +7,6 @@ form.addEventListener('submit', (e) => {
 
 function getData() {
     const term = document.querySelector('#termBox').value;
-    console.log(term);
     if (!term) return;
     fetch(`http://localhost:8080/api/movies?search=${term}`, {method: 'GET', redirect: 'follow'})
     .then(res => {
