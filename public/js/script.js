@@ -1,17 +1,16 @@
-document.querySelector('#submit').addEventListener('submit', e => {
+const form = document.querySelector('.ui');
+
+form.addEventListener('submit', (e) => {
     e.preventDefault();
+    getData();
 });
-document.querySelector('#submit').addEventListener('submit', getData);
 
 function getData() {
     const term = document.querySelector('#termBox').value;
     console.log(term);
-
-    fetch(`http://localhost:8080/api/movies?search=${term}`)
-    .then(res => res.json())
-    .then(json => {
-        if (json.error) return console.log(data.error);
-        
-        console.log(json);
+    if (!term) return;
+    fetch(`http://localhost:8080/api/movies?search=${term}`, {method: 'GET', redirect: 'follow'})
+    .then(res => {
+        location.href = res.url;
     })
 }
