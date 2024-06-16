@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .ui {
@@ -18,5 +19,16 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 500px);
+  grid-template-rows: repeat(4, auto);
+}
+.container h1 {
+  text-align: center;
+}
+.container img {
+  display: flex;
+  margin: auto;
+}
+.container div {
+  margin-left: 10px;
+  margin-right: 0;
 }/*# sourceMappingURL=style.css.map */

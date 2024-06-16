@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .ui {
@@ -19,5 +20,19 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 500px);
+    grid-template-rows: repeat(4, auto);
+
+    h1 {
+        text-align: center;
+    }
+
+    img {
+        display: flex;
+        margin: auto;
+    }
+
+    div {
+        margin-left: 10px;
+        margin-right: 0;
+    }
 }
